@@ -1,0 +1,9 @@
+-arg "-impredicative-set"
+
+-arg "-nois"
+
+-arg "-w all"
+
+-R theories Dekatlas
+
+theories
