@@ -33,7 +33,8 @@ Set Printing Universes .
 
 (** 演算子の優先順位を統一するために << x -> y >> 表記を予約する。 << https://github.com/rocq-prover/rocq/blob/165e537238812a2eef53e3eda174dff95b94bf7d/theories/Corelib/Init/Notations.v#L15 >> の先にあるコードを参考にしている。  *)
 
-Reserved Notation "x -> y" ( at level 99 , right associativity , y at level 200 ) .
+Reserved Notation "x -> y"
+  ( at level 99 , right associativity , y at level 200 ) .
 
 (** 型であるかどうかにより表記の解釈を変えるために << type_scope >> スコープを定義する。 << https://github.com/rocq-prover/rocq/blob/165e537238812a2eef53e3eda174dff95b94bf7d/theories/Corelib/Init/Notations.v#L133 >> の先にあるコードを参考にしている。 *)
 
@@ -57,4 +58,6 @@ Notation "A -> B" := ( forall ( _ : A ) , B ) : type_scope .
 
 (** 恒等関数を定義する。 *)
 
-Definition identity_function : forall A : Set , A -> A := fun A : Set => fun x : A => x .
+Definition identity_function
+  : forall A : Set , A -> A
+  := fun A : Set => fun x : A => x .
