@@ -4,6 +4,6 @@
 
 -arg "-w all"
 
--R theories Dekatlas
+-R theories/ Dekatlas
 
-theories
+theories/
