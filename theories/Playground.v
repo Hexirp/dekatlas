@@ -54,3 +54,7 @@ Open Scope type_scope .
 (** 関数の型を容易に表記するために << x -> y >> 表記を定義する。 << https://github.com/rocq-prover/rocq/blob/165e537238812a2eef53e3eda174dff95b94bf7d/theories/Corelib/Init/Logic.v#L16 >> の先にあるコードを参考にしている。 *)
 
 Notation "A -> B" := ( forall ( _ : A ) , B ) : type_scope .
+
+(** 恒等関数を定義する。 *)
+
+Definition identity_function : forall A : Set , A -> A := fun A : Set => fun x : A => x .
