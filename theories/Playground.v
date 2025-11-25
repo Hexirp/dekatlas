@@ -60,3 +60,11 @@ Notation "A -> B" := (forall (_ : A), B) : type_scope.
 Definition identity_function
   : forall A : Set, A -> A
   := fun A : Set => fun x : A => x.
+
+Definition idfunc
+  : forall A : Set, A -> A
+  := identity_function.
+
+Definition 恒等関数
+  : forall A : Set, A -> A
+  := identity_function.
