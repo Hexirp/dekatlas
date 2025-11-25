@@ -65,6 +65,10 @@ Definition idfunc
   : forall A : Set, A -> A
   := identity_function.
 
+Definition id
+  : forall A : Set, A -> A
+  := identity_function.
+
 Definition 恒等関数
   : forall A : Set, A -> A
   := identity_function.
