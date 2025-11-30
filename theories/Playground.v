@@ -57,18 +57,18 @@ Notation "A -> B" := (forall (_ : A), B) : type_scope.
 
 (** 恒等関数を定義する。 *)
 
-Definition identity_function
+Definition id
   : forall A : Set, A -> A
   := fun A : Set => fun x : A => x.
 
 Definition idfunc
   : forall A : Set, A -> A
-  := identity_function.
+  := id.
 
-Definition id
+Definition identity_function
   : forall A : Set, A -> A
-  := identity_function.
+  := id.
 
 Definition 恒等関数
   : forall A : Set, A -> A
-  := identity_function.
+  := id.
