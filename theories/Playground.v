@@ -69,6 +69,18 @@ Definition identity_function
   : forall A : Set, A -> A
   := id.
 
+Definition idmap
+  : forall A : Set, A -> A
+  := id.
+
+Definition identity_map
+  : forall A : Set, A -> A
+  := id.
+
+Definition identity_mapping
+  : forall A : Set, A -> A
+  := id.
+
 Definition 恒等関数
   : forall A : Set, A -> A
   := id.
