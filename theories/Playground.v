@@ -84,3 +84,38 @@ Definition identity_mapping
 Definition 恒等関数
   : forall A : Set, A -> A
   := id.
+
+(** 定数関数を生成する関数を定義する。 *)
+
+Definition const
+  :
+    forall A : Set,
+    forall B : Set,
+    B -> A -> B
+  :=
+    fun A : Set =>
+    fun B : Set =>
+    fun x : B =>
+    fun y : A =>
+    x.
+
+Definition constant_function
+  :
+    forall A : Set,
+    forall B : Set,
+    B -> A -> B
+  := const.
+
+Definition constant_map
+  :
+    forall A : Set,
+    forall B : Set,
+    B -> A -> B
+  := const.
+
+Definition constant_mapping
+  :
+    forall A : Set,
+    forall B : Set,
+    B -> A -> B
+  := const.
