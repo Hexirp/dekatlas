@@ -125,3 +125,68 @@ Definition constant_mapping
     forall B : Set,
     B -> A -> B
   := const.
+
+(** 関数合成を定義する。 *)
+
+Definition comp
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (B -> C) -> (A -> B) -> A -> C
+  :=
+    fun A : Set =>
+    fun B : Set =>
+    fun C : Set =>
+    fun f : B -> C =>
+    fun g : A -> B =>
+    fun x : A =>
+    f (g x).
+
+Definition compose
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (B -> C) -> (A -> B) -> A -> C
+  := comp.
+
+Definition composition
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (B -> C) -> (A -> B) -> A -> C
+  := comp.
+
+Definition function_composition
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (B -> C) -> (A -> B) -> A -> C
+  := comp.
+
+Definition 合成
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (B -> C) -> (A -> B) -> A -> C
+  := comp.
+
+Definition 合成する
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (B -> C) -> (A -> B) -> A -> C
+  := comp.
+
+Definition 関数合成
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (B -> C) -> (A -> B) -> A -> C
+  := comp.
