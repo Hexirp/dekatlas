@@ -126,6 +126,20 @@ Definition constant_mapping
     B -> A -> B
   := const.
 
+Definition 定数関数
+  :
+    forall A : Set,
+    forall B : Set,
+    B -> A -> B
+  := const.
+
+Definition 定数関数を作る
+  :
+    forall A : Set,
+    forall B : Set,
+    B -> A -> B
+  := const.
+
 (** 関数合成を定義する。 *)
 
 Definition comp
