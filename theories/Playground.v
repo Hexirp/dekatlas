@@ -325,3 +325,58 @@ Definition 関数適用
     forall B : Set,
     (A -> B) -> A -> B
   := ap.
+
+(** 関数逆順適用を定義する。 *)
+
+Definition apR
+  :
+    forall A : Set,
+    forall B : Set,
+    A -> (A -> B) -> B
+  :=
+    fun A : Set =>
+    fun B : Set =>
+    fun x : A =>
+    fun f : A -> B =>
+    f x.
+
+Definition apply_reverse
+  :
+    forall A : Set,
+    forall B : Set,
+    A -> (A -> B) -> B
+  := apR.
+
+Definition reverse_application
+  :
+    forall A : Set,
+    forall B : Set,
+    A -> (A -> B) -> B
+  := apR.
+Definition function_reverse_application
+  :
+    forall A : Set,
+    forall B : Set,
+    A -> (A -> B) -> B
+  := apR.
+
+Definition 逆順適用
+  :
+    forall A : Set,
+    forall B : Set,
+    A -> (A -> B) -> B
+  := apR.
+
+Definition 逆順に適用する
+  :
+    forall A : Set,
+    forall B : Set,
+    A -> (A -> B) -> B
+  := apR.
+
+Definition 関数逆順適用
+  :
+    forall A : Set,
+    forall B : Set,
+    A -> (A -> B) -> B
+  := apR.
