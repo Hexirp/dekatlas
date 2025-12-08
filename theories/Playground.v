@@ -269,3 +269,59 @@ Definition 関数逆順合成
     forall C : Set,
     (A -> B) -> (B -> C) -> A -> C
   := compR.
+
+(** 関数適用を定義する。 *)
+
+Definition ap
+  :
+    forall A : Set,
+    forall B : Set,
+    (A -> B) -> A -> B
+  :=
+    fun A : Set =>
+    fun B : Set =>
+    fun f : A -> B =>
+    fun x : A =>
+    f x.
+
+Definition apply
+  :
+    forall A : Set,
+    forall B : Set,
+    (A -> B) -> A -> B
+  := ap.
+
+Definition application
+  :
+    forall A : Set,
+    forall B : Set,
+    (A -> B) -> A -> B
+  := ap.
+
+Definition function_application
+  :
+    forall A : Set,
+    forall B : Set,
+    (A -> B) -> A -> B
+  := ap.
+
+Definition 適用
+  :
+    forall A : Set,
+    forall B : Set,
+    (A -> B) -> A -> B
+  := ap.
+
+Definition 適用する
+  :
+    forall A : Set,
+    forall B : Set,
+    (A -> B) -> A -> B
+  := ap.
+
+Definition 関数適用
+  :
+    forall A : Set,
+    forall B : Set,
+    (A -> B) -> A -> B
+  := ap.
