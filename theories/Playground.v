@@ -204,3 +204,68 @@ Definition 関数合成
     forall C : Set,
     (B -> C) -> (A -> B) -> A -> C
   := comp.
+
+(** 関数逆順合成を定義する。 *)
+
+Definition compR
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (A -> B) -> (B -> C) -> A -> C
+  :=
+    fun A : Set =>
+    fun B : Set =>
+    fun C : Set =>
+    fun f : A -> B =>
+    fun g : B -> C =>
+    fun x : A =>
+    g (f x).
+
+Definition compose_reverse
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (A -> B) -> (B -> C) -> A -> C
+  := compR.
+
+Definition reverse_composition
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (A -> B) -> (B -> C) -> A -> C
+  := compR.
+
+Definition function_reverse_composition
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (A -> B) -> (B -> C) -> A -> C
+  := compR.
+
+Definition 逆順合成
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (A -> B) -> (B -> C) -> A -> C
+  := compR.
+
+Definition 逆順で合成する
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (A -> B) -> (B -> C) -> A -> C
+  := compR.
+
+Definition 関数逆順合成
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (A -> B) -> (B -> C) -> A -> C
+  := compR.
