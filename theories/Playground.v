@@ -254,7 +254,7 @@ Definition 逆順合成
     (A -> B) -> (B -> C) -> A -> C
   := compR.
 
-Definition 逆順で合成する
+Definition 逆順に合成する
   :
     forall A : Set,
     forall B : Set,
