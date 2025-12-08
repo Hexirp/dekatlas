@@ -91,6 +91,10 @@ Definition 恒等関数
   : forall A : Set, A -> A
   := id.
 
+Definition 恒等関数を作る
+  : forall A : Set, A -> A
+  := id.
+
 (** 定数関数を生成する関数を定義する。 *)
 
 Definition const
