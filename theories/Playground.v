@@ -384,3 +384,19 @@ Definition 関数逆順適用
     forall B : Set,
     A -> (A -> B) -> B
   := apR.
+
+(** 依存関数適用を定義する。 *)
+
+Definition apD
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    (forall x : A, B x) ->
+    forall x : A,
+    B x
+  :=
+    fun A : Set =>
+    fun B : A -> Set =>
+    fun f : forall x : A, B x =>
+    fun x : A =>
+    f x.
