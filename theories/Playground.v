@@ -400,3 +400,20 @@ Definition apD
     fun f : forall x : A, B x =>
     fun x : A =>
     f x.
+
+(** 引数の順番を入れ替える関数を定義する。 *)
+
+Definition flip
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (B -> A -> C) -> A -> B -> C
+  :=
+    fun A : Set =>
+    fun B : Set =>
+    fun C : Set =>
+    fun f : B -> A -> C =>
+    fun x : A =>
+    fun y : B =>
+    f y x.
