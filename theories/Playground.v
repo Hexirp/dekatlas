@@ -462,3 +462,11 @@ Definition flip
     fun x : A =>
     fun y : B =>
     f y x.
+
+Definition ひっくり返す
+  :
+    forall A : Set,
+    forall B : Set,
+    forall C : Set,
+    (B -> A -> C) -> A -> B -> C
+  := flip.
