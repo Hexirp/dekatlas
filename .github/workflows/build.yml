@@ -10,3 +10,10 @@ jobs:
       with:
         coq_version: '8.20.1'
         ocaml_version: 'default'
+      before_script: |
+        startGroup "Workaround permission issue"
+          sudo chown -R 1000:1000 .
+        endGroup
+    - name: Revert permissions
+      if: ${{ always() }}
+      run: sudo chown -R 1001:116 .
