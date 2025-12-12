@@ -401,6 +401,51 @@ Definition apD
     fun x : A =>
     f x.
 
+Definition apply_dependently
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    (forall x : A, B x) ->
+    forall x : A,
+    B x
+  := apD.
+
+Definition dependent_application
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    (forall x : A, B x) ->
+    forall x : A,
+    B x
+  := apD.
+
+Definition dependent_function_application
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    (forall x : A, B x) ->
+    forall x : A,
+    B x
+  := apD.
+
+Definition 依存適用
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    (forall x : A, B x) ->
+    forall x : A,
+    B x
+  := apD.
+
+Definition 依存関数適用
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    (forall x : A, B x) ->
+    forall x : A,
+    B x
+  := apD.
+
 (** 引数の順番を入れ替える関数を定義する。 *)
 
 Definition flip
