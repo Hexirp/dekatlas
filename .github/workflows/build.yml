@@ -1,0 +1,9 @@
+name: build
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
+    - uses: rocq-community/docker-coq-action@126d4ac196f8133729a1cb0d2aa1ee7106efec58
