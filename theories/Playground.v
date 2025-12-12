@@ -363,13 +363,6 @@ Definition 逆順適用
     A -> (A -> B) -> B
   := apR.
 
-Definition 逆順に適用する
-  :
-    forall A : Set,
-    forall B : Set,
-    A -> (A -> B) -> B
-  := apR.
-
 Definition 関数逆順適用
   :
     forall A : Set,
