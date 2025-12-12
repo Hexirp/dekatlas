@@ -258,14 +258,6 @@ Definition 逆順合成
     (A -> B) -> (B -> C) -> A -> C
   := compR.
 
-Definition 逆順に合成する
-  :
-    forall A : Set,
-    forall B : Set,
-    forall C : Set,
-    (A -> B) -> (B -> C) -> A -> C
-  := compR.
-
 Definition 関数逆順合成
   :
     forall A : Set,
