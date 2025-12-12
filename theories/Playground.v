@@ -431,6 +431,67 @@ Definition 依存関数適用
     B x
   := apD.
 
+(** 依存関数逆順適用を定義する。 *)
+
+Definition apDR
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    forall x : A,
+    (forall x : A, B x) ->
+    B x
+  :=
+    fun A : Set =>
+    fun B : A -> Set =>
+    fun x : A =>
+    fun f : forall x : A, B x =>
+    f x.
+
+Definition apply_reverse_dependently
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    forall x : A,
+    (forall x : A, B x) ->
+    B x
+  := apDR.
+
+Definition dependent_reverse_application
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    forall x : A,
+    (forall x : A, B x) ->
+    B x
+  := apDR.
+
+Definition dependent_function_reverse_application
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    forall x : A,
+    (forall x : A, B x) ->
+    B x
+  := apDR.
+
+Definition 依存逆順適用
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    forall x : A,
+    (forall x : A, B x) ->
+    B x
+  := apDR.
+
+Definition 依存関数逆順適用
+  :
+    forall A : Set,
+    forall B : A -> Set,
+    forall x : A,
+    (forall x : A, B x) ->
+    B x
+  := apDR.
+
 (** 引数の順番を入れ替える関数を定義する。 *)
 
 Definition flip
