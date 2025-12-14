@@ -12,7 +12,7 @@ jobs:
       with:
         coq_version: '8.20.1'
         ocaml_version: 'default'
-        before_script: |
+        before_install: |
           startGroup "Workaround permission issue"
             echo "=== chmod ==="
             sudo chmod -R a=u ./
@@ -23,4 +23,8 @@ jobs:
             echo "=== Directory Permission ==="
             ls -ld . .git
             echo "=== Git Status Check ==="
+            git status || echo "git status failed"
+          endGroup
+          startGroup "Print opam config"
+            opam config list; opam repo list; opam list
           endGroup
