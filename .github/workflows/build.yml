@@ -22,6 +22,8 @@ jobs:
             git config --list
             echo "=== Directory Permission ==="
             ls -ld . .git
+            echo "=== Safe Directory ==="
+            git config --global --add safe.directory /github/workspace
             echo "=== Git Status Check ==="
             git status || echo "git status failed"
           endGroup
