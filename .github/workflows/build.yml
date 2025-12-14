@@ -7,20 +7,20 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
-    - name: Workaround
-      run: sudo chmod -R a=u ./
-    - name: Debug Command
-      run: |
-        echo "=== User Info ==="
-        id
-        echo "=== Git Config ==="
-        git config --list
-        echo "=== Directory Permission ==="
-        ls -ld . .git
-        echo "=== Git Status Check ==="
-        git status || echo "git status failed"
     - name: Rocq Community Action
       uses: rocq-community/docker-coq-action@126d4ac196f8133729a1cb0d2aa1ee7106efec58
       with:
         coq_version: '8.20.1'
         ocaml_version: 'default'
+        before_script: |
+          startGroup "Workaround permission issue"
+            echo "=== chmod ==="
+            sudo chmod -R a=u ./
+            echo "=== User Info ==="
+            id
+            echo "=== Git Config ==="
+            git config --list
+            echo "=== Directory Permission ==="
+            ls -ld . .git
+            echo "=== Git Status Check ==="
+          endGroup
