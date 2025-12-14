@@ -4,20 +4,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: coqorg/coq:8.20.1-ocaml-4.14.2-flambda
     steps:
     - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
-    - uses: rocq-community/docker-coq-action@126d4ac196f8133729a1cb0d2aa1ee7106efec58
-      with:
-        coq_version: '8.20.1'
-        ocaml_version: 'default'
-        custom_script: |
-          startGroup "Workaround permission issue"
-            sudo chmod -R a=u .
-          endGroup
-          {{before_install}}
-          {{install}}
-          {{after_install}}
-          {{before_script}}
-          {{script}}
-          {{after_script}}
-          {{uninstall}}
+    - name: Build
+      run: ./build.sh
