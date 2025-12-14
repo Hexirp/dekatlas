@@ -6,6 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     container: coqorg/coq:8.20.1-ocaml-4.14.2-flambda
     steps:
-    - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
+    - name: Workaround
+      run: sudo chmod -R a=u /__w
+    - name: Checkout
+      uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
     - name: Build
       run: ./build.sh
