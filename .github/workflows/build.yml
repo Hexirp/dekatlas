@@ -14,27 +14,12 @@ jobs:
         ocaml_version: 'default'
         before_install: |
           startGroup "Workaround permission issue"
-            echo "=== User Info ==="
+            pwd
             id
-            echo "=== Git Config ==="
             git config --list
-            echo "=== Directory Permission ==="
-            ls -ld . .git
-            echo "=== Safe Directory ==="
-            git config --global --add safe.directory /github/workspace
-            echo "=== Git Status Check ==="
-            git status || echo "git status failed"
-            echo "=== chmod ==="
+            ls -ld . .git /github/workspace
             sudo chmod -R a=u ./
-            echo "=== User Info ==="
-            id
-            echo "=== Git Config ==="
-            git config --list
-            echo "=== Directory Permission ==="
-            ls -ld . .git
-            echo "=== Safe Directory ==="
             git config --global --add safe.directory /github/workspace
-            echo "=== Git Status Check ==="
             git status || echo "git status failed"
           endGroup
           startGroup "Print opam config"
@@ -42,26 +27,9 @@ jobs:
           endGroup
         before_script: |
           startGroup "Workaround permission issue"
-            echo "=== User Info ==="
+            pwd
             id
-            echo "=== Git Config ==="
             git config --list
-            echo "=== Directory Permission ==="
-            ls -ld . .git
-            echo "=== Safe Directory ==="
-            git config --global --add safe.directory /github/workspace
-            echo "=== Git Status Check ==="
-            git status || echo "git status failed"
-            echo "=== chmod ==="
-            sudo chmod -R a=u ./
-            echo "=== User Info ==="
-            id
-            echo "=== Git Config ==="
-            git config --list
-            echo "=== Directory Permission ==="
-            ls -ld . .git
-            echo "=== Safe Directory ==="
-            git config --global --add safe.directory /github/workspace
-            echo "=== Git Status Check ==="
+            ls -ld . .git /github/workspace
             git status || echo "git status failed"
           endGroup
