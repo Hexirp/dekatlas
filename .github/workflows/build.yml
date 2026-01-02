@@ -17,7 +17,7 @@ jobs:
             pwd
             id
             git config --list
-            ls -ld . .git /github/workspace
+            ls -ld . .git /github/workspace /home/coq /home/coq/.opam
             sudo chmod -R a=u ./
             git config --global --add safe.directory /github/workspace
             git status || echo "git status failed"
@@ -30,6 +30,6 @@ jobs:
             pwd
             id
             git config --list
-            ls -ld . .git /github/workspace
+            ls -ld . .git /github/workspace /home/coq /home/coq/.opam
             git status || echo "git status failed"
           endGroup
