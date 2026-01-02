@@ -18,7 +18,7 @@ jobs:
             id
             git config --list
             ls -ld . .git /github/workspace /home/coq /home/coq/.opam
-            sudo chmod -R a=u ./
+            sudo chmod -R a=u ./ /home/coq
             git config --global --add safe.directory /github/workspace
             git status || echo "git status failed"
           endGroup
