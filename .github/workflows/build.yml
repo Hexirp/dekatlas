@@ -11,26 +11,11 @@ jobs:
       uses: rocq-community/docker-coq-action@126d4ac196f8133729a1cb0d2aa1ee7106efec58
       with:
         coq_version: '8.20.1'
-        ocaml_version: 'default'
-        before_install: |
+        custom_script: |
+          # See https://github.com/rocq-community/docker-coq-action/blob/126d4ac196f8133729a1cb0d2aa1ee7106efec58/README.md#permissions
+          # See https://github.com/rocq-community/docker-coq-action/issues/70
           startGroup "Workaround permission issue"
-            pwd
-            id
-            git config --list
-            ls -ld . .git /github/workspace /home/coq /home/coq/.opam
-            sudo chown -R 1000:1000 .
-            git config --global --add safe.directory '/github/workspace /home/coq'
-            git status || echo "git status failed"
+            sudo chmod -R a=u ./
           endGroup
-          startGroup "Print opam config"
-            opam config list; opam repo list; opam list
-          endGroup
-        before_script: |
-          startGroup "Workaround permission issue"
-            pwd
-            id
-            git config --list
-            ls -ld . .git /github/workspace /home/coq /home/coq/.opam
-            sudo chown -R 1001:166 .
-            git status || echo "git status failed"
-          endGroup
+          sh -c ./build_makefile.sh
+          sh -c ./build.sh
