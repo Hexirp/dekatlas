@@ -31,5 +31,6 @@ jobs:
             id
             git config --list
             ls -ld . .git /github/workspace /home/coq /home/coq/.opam
+            sudo chown -R 1001:166 .
             git status || echo "git status failed"
           endGroup
