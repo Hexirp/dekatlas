@@ -13,10 +13,5 @@ jobs:
         coq_version: '8.20.1'
         ocaml_version: '4.14.2-flambda'
         custom_script: |
-          # See https://github.com/rocq-community/docker-coq-action/blob/126d4ac196f8133729a1cb0d2aa1ee7106efec58/README.md#permissions
-          # See https://github.com/rocq-community/docker-coq-action/issues/70
-          startGroup "Workaround permission issue"
-            sudo chmod -R a=u ./
-          endGroup
           sh -c ./build_makefile.sh
           sh -c ./build.sh
