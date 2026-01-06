@@ -38,6 +38,10 @@ Dekatlas で構成主義数学を用いるのは、通常の数学とは違っ�
 
 Dekatlas は Rocq を使用します。広く使われているような定理証明支援システムの中で構成主義数学を行うのに向いているのは Rocq と Agda しかなく、巨大数を扱うためには簡約状態を精密に管理できる Rocq の方が向いていると判断しました。
 
+## Dekatlas の歴史
+
+Dekatlas は [googology-in-coq](https://github.com/Hexirp/googology-in-coq) というプロジェクトの後継ですが、その方針は異なります。
+
 ## Dekatlas の開発環境
 
 Dekatlas をビルドするためには、以下の手順に従ってください。
