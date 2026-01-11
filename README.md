@@ -42,9 +42,15 @@ Dekatlas は Rocq を使用します。 Rocq は 1989 年にリリースされ�
 
 巨大数を真正面から計算することは不可能であるため、巨大数論においては様々な手段で計算量を圧縮しますが、それでもなお巨大なスケールの計算が必要になることがあり、そのような計算を取り扱う能力を Rocq は有しています。たとえば、ビジービーバーチャレンジというプロジェクトは、停止するまで 4717 万 6870 ステップかかるチューリングマシンを Rocq の内部で実行して、それを証明の一部としています。これについては "[Determination of the fifth Busy Beaver value](https://arxiv.org/abs/2509.12337)" (The bbchallenge Collaboration, 2025) という論文に詳細があります。
 
-## Dekatlas の歴史
+## Dekatlas に先行するライブラリ
 
-Dekatlas は [googology-in-coq](https://github.com/Hexirp/googology-in-coq) というプロジェクトの後継ですが、その方針は異なります。
+[googology-in-coq](https://github.com/Hexirp/googology-in-coq) は、かつて P.N. Hexirp さんが開発していた構成主義数学において巨大数論を機械化することを目標とするライブラリですが、頻繁な設計の変更が原因で巨大数論を形式化する段階に着手することができないまま、 Dekatlas に移行しています。
+
+[Googology](https://github.com/choukh/Googology) (choukh) は、かつて P.N. choukh さんが開発していた Rocq を使用して構成主義数学において巨大数論を形式化することを目標とするライブラリであり、ブラウワー順序数を使用して順序数の算術と超限変数ヴェブレン関数を定義することに成功しています。
+
+[googology](https://github.com/ccz181078/googology) (ccz181078) は、かつて P.N. ccz181078 さんが開発していた Rocq を使用して巨大数論を機械化することを目標とするライブラリであり、ブラウワー順序数を使用して順序数の算術と超限変数ヴェブレン関数とブーフホルツ関数を定義することに成功しています。
+
+[agda-googology](https://github.com/choukh/agda-googology) (choukh) は、 P.N. choukh さんが開発している Agda を使用して構成主義数学において巨大数論を形式化することを目標とするライブラリであり、ブラウワー順序数を使用して順序数の算術と超限変数ヴェブレン関数とブーフホルツ関数を定義することに成功しています。
 
 ## Dekatlas の開発環境
 
