@@ -58,13 +58,15 @@ Dekatlas は Rocq を使用します。 Rocq は 1989 年にリリースされ�
 
 ## Dekatlas に先行するライブラリ
 
-[googology-in-coq](https://github.com/Hexirp/googology-in-coq) は、かつて P.N. Hexirp さんが開発していた構成主義数学において巨大数論を機械化することを目標とするライブラリですが、頻繁な設計の変更が原因で巨大数論を形式化する段階に着手することができないまま、 Dekatlas に移行しています。
+[googology-in-coq](https://github.com/Hexirp/googology-in-coq) は、かつて P.N. Hexirp さんが開発していた構成主義数学において巨大数論を機械化することを目標とするライブラリですが、頻繁な設計の変更が原因で巨大数論を形式化する段階に着手することができていません。
 
-[Googology](https://github.com/choukh/Googology) (choukh) は、かつて P.N. choukh さんが開発していた Rocq を使用して構成主義数学において巨大数論を形式化することを目標とするライブラリであり、ブラウワー順序数を使用して順序数の算術と超限変数ヴェブレン関数を定義することに成功しています。
+[Googology](https://github.com/choukh/Googology) (choukh) は、かつて P.N. choukh さんが開発していた Rocq を使用して構成主義数学において巨大数論を形式化することを目標とするライブラリであり、ブラウワー順序数を使用して順序数の算術と超限変数ヴェブレン関数を定義しています。
 
-[googology](https://github.com/ccz181078/googology) (ccz181078) は、かつて P.N. ccz181078 さんが開発していた Rocq を使用して巨大数論を機械化することを目標とするライブラリであり、ブラウワー順序数を使用して順序数の算術と超限変数ヴェブレン関数とブーフホルツ関数を定義することに成功しています。
+[googology](https://github.com/ccz181078/googology) (ccz181078) は、かつて P.N. ccz181078 さん（またの名を P.N. mxdys さん）が開発していた Rocq を使用して巨大数論を機械化することを目標とするライブラリであり、ブラウワー順序数を使用して順序数の算術と超限変数ヴェブレン関数とブーフホルツ関数を定義しています。構成主義数学を使用しています。
 
-[agda-googology](https://github.com/choukh/agda-googology) (choukh) は、 P.N. choukh さんが開発している Agda を使用して構成主義数学において巨大数論を形式化することを目標とするライブラリであり、ブラウワー順序数を使用して順序数の算術と超限変数ヴェブレン関数とブーフホルツ関数を定義することに成功しています。
+[agda-googology](https://github.com/choukh/agda-googology) (choukh) は、 P.N. choukh さんが開発している Agda を使用して巨大数論を形式化することを目標とするライブラリであり、ブラウワー順序数を使用して順序数の算術と超限変数ヴェブレン関数とブーフホルツ関数を定義しています。構成主義数学を使用しています。
+
+[Coq-BB5](https://github.com/ccz181078/Coq-BB5) は、 P.N. ccz181078 さん（またの名を P.N. mxdys さん）と Tristan Stérin さんが開発した Rocq を使用して `BB(5) = 47,176,870` であることを証明したライブラリです。構成主義数学を使用しています。
 
 ## Dekatlas の開発環境
 
