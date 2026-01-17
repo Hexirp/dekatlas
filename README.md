@@ -38,7 +38,9 @@ P.N. p 進大好き bot さんを始めとした方々による啓蒙が繰り�
 
 匿名を基本としていて人の出入りが激しく広い分野の知見を応用している巨大数論において、それでもなお正しさを希求するならば、定理証明支援システムを用いて機械化することが唯一の選択肢です。個人に対する信頼に依存する割合が小さいため、実名であるか匿名であるかの違いが問題にならなくなります。人の出入りが激しくて、個人による貢献が散発的であっても、着実に蓄積されていき、巨大数論の発展に繋がることが期待できます。巨大数論において使われる分野を全て知ることができなくて、知らない分野における間違いの可能性を否定できなくても、代わりに定理証明支援システムが正しいことを保証してくれます。
 
-"[Determination of the fifth Busy Beaver value](https://arxiv.org/abs/2509.12337)" (The bbchallenge Collaboration, 2025) と "[The Equational Theories Project: Advancing Collaborative Mathematical Research at Scale](https://arxiv.org/abs/2512.07087)" (The Equational Theories Project, 2025) は、定理証明支援システムが通常の数学では考えられないような個人に対する信頼に依存しない大規模な協力を可能にすることを示しており、これらのプロジェクトと同様に巨大数論の機械化も大量の巨大数に対する複数の細かい並列なタスクに分割できるため、同じように定理証明支援システムが有効であることを期待できます。数学者の Terence Tao は、 "[A pilot project in universal algebra to explore new ways to collaborate and use machine assistance?](https://terrytao.wordpress.com/2024/09/25/a-pilot-project-in-universal-algebra-to-explore-new-ways-to-collaborate-and-use-machine-assistance/)" という記事の中で、一つの間違いが全体を台無しにするかもしれないため一般大衆や生成 AI からの貢献を受け入れることが難しいという問題を定理証明支援システムが解決し、全体を理解していなくても取り組むことができる細かいタスクに分割できるようなプロジェクトであれば定理証明支援システムによる大規模な協力が可能となることを指摘しています。
+"[Determination of the fifth Busy Beaver value](https://arxiv.org/abs/2509.12337)" (The bbchallenge Collaboration, 2025) と "[The Equational Theories Project: Advancing Collaborative Mathematical Research at Scale](https://arxiv.org/abs/2512.07087)" (The Equational Theories Project, 2025) は、定理証明支援システムが通常の数学では考えられないような個人に対する信頼に依存しない大規模な協力を可能にすることを示しており、これらのプロジェクトと同様に巨大数論の機械化もそれぞれの巨大数に対する複数の細かい並列なタスクに分割できるため、同じように定理証明支援システムが有効であることを期待できます。
+
+数学者の Terence Tao は、 "[A pilot project in universal algebra to explore new ways to collaborate and use machine assistance?](https://terrytao.wordpress.com/2024/09/25/a-pilot-project-in-universal-algebra-to-explore-new-ways-to-collaborate-and-use-machine-assistance/)" という記事の中で、一つの間違いが全体を台無しにするかもしれないため不特定多数や生成 AI からの貢献を受け入れることが難しいという問題を定理証明支援システムが解決し、全体を理解していなくても取り組むことができる細かいタスクに分割できるようなプロジェクトであれば定理証明支援システムによる大規模な協力が可能となることを指摘しています。
 
 ## Dekatlas と構成主義数学
 
