@@ -74,12 +74,16 @@ Dekatlas は Rocq を使用します。 Rocq は 1989 年にリリースされ�
 
 ## Dekatlas の開発環境
 
+Windows の上で Dekatlas を開発するためにインストールする必要があるソフトウェアは次の通りです。
+
+1. Rocq Platform 2025.01.0
+2. GNU make
+3. Git for Windows
+
 以下の手順で Dekatlas をビルドすることができます。
 
-1. Rocq をインストールする。
-2. Make をインストールする。
-3. `build_makefile.sh` を実行する。
-4. `build.sh` を実行する。
+1. `build_makefile.sh` を実行する。
+2. `build.sh` を実行する。
 
 ## ライセンス
 
