@@ -80,3 +80,7 @@ Dekatlas は Rocq を使用します。 Rocq は 1989 年にリリースされ�
 2. Make をインストールする。
 3. `build_makefile.sh` を実行する。
 4. `build.sh` を実行する。
+
+## ライセンス
+
+Dekatlas ライブラリは LICENSE ファイルにある通り改めて著作権表示とライセンスが行われている特定のファイルを除いて MIT ライセンスです。
