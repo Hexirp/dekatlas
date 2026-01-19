@@ -76,6 +76,14 @@ Dekatlas は Rocq を使用します。 Rocq は 1989 年にリリースされ�
 
 [Coq-BB5](https://github.com/ccz181078/Coq-BB5) は、 P.N. ccz181078 さん（またの名を P.N. mxdys さん）と Tristan Stérin さんが開発した Rocq を使用して `BB(5) = 47,176,870` であることを証明したライブラリです。構成主義数学を使用しています。
 
+## Dekatlas の実装状況
+
+（執筆中）
+
+## Dekatlas のディレクトリ構造
+
+（執筆中）
+
 ## Dekatlas の開発環境
 
 Windows の上で Dekatlas を開発するためにインストールする必要があるソフトウェアは次の通りです。
@@ -93,6 +101,10 @@ Windows の上で Dekatlas を開発する場合、次のソフトウェアを�
 
 1. `build_makefile.sh` を実行する。
 2. `build.sh` を実行する。
+
+## Dekatlas に参加するには
+
+（執筆中）
 
 ## ライセンス
 
