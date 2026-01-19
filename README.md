@@ -84,6 +84,11 @@ Windows の上で Dekatlas を開発するためにインストールする必�
 2. GNU make
 3. Git for Windows
 
+Windows の上で Dekatlas を開発する場合、次のソフトウェアを使用することを推奨します。
+
+1. Visual Studio Code
+2. VsRocq
+
 以下の手順で Dekatlas をビルドすることができます。
 
 1. `build_makefile.sh` を実行する。
